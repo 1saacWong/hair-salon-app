@@ -1,0 +1,17 @@
+<h1>Client list of <%=@stylist.name()%></h1>
+<div class="container">
+<% if @stylist.clients().any?() %>
+    <ul>
+      <% @stylist.clients().each() do |client| %>
+        <li><a href="clients/<%=client.id()%>/edit"><%=client.name()%></li>
+      <% end %>
+    </ul>
+<% else %>
+ <p><%=@stylist.name()%> currently has no clients</p>
+<% end %>
+</div>
+
+<div class="container">
+  <p><a href="/stylists/<%=@stylist.id()%>/edit">Edit <%=@stylist.name()%></a></p>
+  <p><a href="/">HOME</a></p>
+</div>

@@ -1,0 +1,14 @@
+<h1>Update the <%=@stylist.name() %></h1>
+<form class="" action="/stylists/<%= @stylist.id()%>" method="post">
+  <input type="hidden" name="_method" value="patch">
+
+  <label for="name">Rename your stylist:</label>
+  <input type="text" name="name" id="name2">
+
+  <button type="submit">Update stylist</button>
+
+</form>
+
+<form action="/stylists/<%=@stylist.id()%>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <button type="submit">Delete Stylist</button>
