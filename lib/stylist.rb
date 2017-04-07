@@ -60,6 +60,4 @@ define_method(:clients) do
   end
     stylist_clients
 end
-
-
 end

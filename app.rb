@@ -100,3 +100,10 @@ delete("/clients/:id") do
   @stylist = Stylist.find(stylist_id)
   erb(:stylist)
 end
+
+post('/reset_database') do
+  DB.exec("DELETE FROM clients *;")
+  DB.exec("DELETE FROM stylists *;")
+  @stylists = Stylist.all()
+  erb(:index)
+end
