@@ -1,6 +1,6 @@
-# Word Count Service by Isaac Wong
+# Hair Salon App by Isaac Wong
 
-WHair Salon
+Hair Salon
 An application for a hair salon. The stylists at the salon work independently, so each client will only belong to a single stylist (one stylist, many clients).
 
 The following are the user stories:
